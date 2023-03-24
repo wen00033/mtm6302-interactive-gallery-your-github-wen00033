@@ -87,8 +87,10 @@ for (const object of imagesObjects) {
 }
 
 $container.addEventListener("click", function (e) {
-  $detail.innerHTML = `<img src="${e.target.dataset.large}">
+  if (e.target.classList.contains("card-img-top")) {
+    $detail.innerHTML = `<img src="${e.target.dataset.large}">
   <h3 class =photoTitle>${e.target.alt}</h3>`;
+  }
 });
 
 $detail.addEventListener("click", function () {
