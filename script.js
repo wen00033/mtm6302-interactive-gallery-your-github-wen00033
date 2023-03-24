@@ -96,17 +96,3 @@ $container.addEventListener("click", function (e) {
 $detail.addEventListener("click", function () {
   $detail.innerHTML = "";
 });
-
-// $detail.addEventListener("click", function () {
-//   $detail.innerHTML = "";
-// });
-
-// $img.addEventListener("click", function (e) {
-//   $detail.innerHTML = `
-//     <img src="${$img.dataset.large}">
-//     <small>${$img.dataset.source}</small>`;
-//   $detail.classList.add("popup");
-// });
-// $detail.addEventListener("click", function () {
-//   $detail.innerHTML = "";
-// });
